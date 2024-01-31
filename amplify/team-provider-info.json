@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-webappimagecompresso-dev-140812-authRole",
+      "UnauthRoleArn": "arn:aws:iam::980377181750:role/amplify-webappimagecompresso-dev-140812-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::980377181750:role/amplify-webappimagecompresso-dev-140812-authRole",
+      "Region": "eu-west-3",
+      "DeploymentBucketName": "amplify-webappimagecompresso-dev-140812-deployment",
+      "UnauthRoleName": "amplify-webappimagecompresso-dev-140812-unauthRole",
+      "StackName": "amplify-webappimagecompresso-dev-140812",
+      "StackId": "arn:aws:cloudformation:eu-west-3:980377181750:stack/amplify-webappimagecompresso-dev-140812/c9f3a1c0-c039-11ee-a246-0eda5b76f14c",
+      "AmplifyAppId": "d37y8qdpbd3pt7"
+    },
+    "categories": {
+      "api": {
+        "apiwebappimgcomp": {}
+      }
+    }
+  }
+}
