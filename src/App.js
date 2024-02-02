@@ -1,5 +1,5 @@
 import React from 'react';
-import ApiHandler from './ApiHandler';
+import ApiHandler from './pages/Compressor';
 import { Amplify } from 'aws-amplify';
 import amplifyconfig from './amplifyconfiguration.json';
 Amplify.configure(amplifyconfig);
