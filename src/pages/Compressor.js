@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios'; // Import axios
 
-function ApiHandler() {
+function CompressFile() {
   const [file, setFile] = useState(null);
   const [message, setMessage] = useState('');
   const [uploadProgress, setUploadProgress] = useState(0); // New state for the upload progress
@@ -55,4 +55,4 @@ function ApiHandler() {
   );
 }
 
-export default ApiHandler;
+export default CompressFile;
