@@ -70,6 +70,7 @@ export default function MarketingFooterBrand(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
+            children="Products"
             onClick={() => {
               productsOnClick();
             }}

@@ -1,13 +1,12 @@
 import React from 'react';
 import ApiHandler from './pages/Compressor';
-import { Amplify } from 'aws-amplify';
-import amplifyconfig from './amplifyconfiguration.json';
-Amplify.configure(amplifyconfig);
+import { MarketingFooterBrand } from './ui-components';
 
 function App() {
   return (
     <div className="App">
       <ApiHandler />
+      <MarketingFooterBrand />
     </div>
   );
 }
