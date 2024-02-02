@@ -11,6 +11,10 @@ import { Flex, Text } from "@aws-amplify/ui-react";
 import LogoWithText from "./LogoWithText";
 export default function MarketingFooterBrand(props) {
   const { overrides, ...rest } = props;
+  const marketingFooterBrandOnClick = useNavigateAction({
+    type: "url",
+    url: "",
+  });
   const productsOnClick = useNavigateAction({ type: "url", url: "" });
   return (
     <Flex
@@ -23,6 +27,9 @@ export default function MarketingFooterBrand(props) {
       position="relative"
       padding="40px 40px 40px 40px"
       backgroundColor="rgba(233,249,252,1)"
+      onClick={() => {
+        marketingFooterBrandOnClick();
+      }}
       {...getOverrideProps(overrides, "MarketingFooterBrand")}
       {...rest}
     >
