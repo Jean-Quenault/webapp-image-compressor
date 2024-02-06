@@ -1,5 +1,5 @@
 import React from 'react';
-import CompressFile from './pages/Compressor';
+import CompressFile from './components/Compressor';
 import { MarketingFooterBrand } from './ui-components';
 
 function App() {
