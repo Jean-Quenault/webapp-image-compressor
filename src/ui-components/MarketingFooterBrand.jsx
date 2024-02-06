@@ -8,14 +8,21 @@
 import * as React from "react";
 import { getOverrideProps, useNavigateAction } from "./utils";
 import { Flex, Text } from "@aws-amplify/ui-react";
-import LogoWithText from "./LogoWithText";
+import Logo from "./Logo";
 export default function MarketingFooterBrand(props) {
   const { overrides, ...rest } = props;
   const marketingFooterBrandOnClick = useNavigateAction({
     type: "url",
     url: "",
   });
-  const productsOnClick = useNavigateAction({ type: "url", url: "" });
+  const compresstoutOnClick = useNavigateAction({
+    type: "url",
+    url: "https://google.com",
+  });
+  const compressOnClick = useNavigateAction({
+    type: "url",
+    url: "/compressor",
+  });
   return (
     <Flex
       gap="32px"
@@ -77,11 +84,11 @@ export default function MarketingFooterBrand(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children="A propos"
+            children="Compresstout"
             onClick={() => {
-              productsOnClick();
+              compresstoutOnClick();
             }}
-            {...getOverrideProps(overrides, "Products")}
+            {...getOverrideProps(overrides, "Compresstout")}
           ></Text>
           <Text
             fontFamily="Inter"
@@ -102,8 +109,8 @@ export default function MarketingFooterBrand(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children="Libraries"
-            {...getOverrideProps(overrides, "Libraries")}
+            children="Home"
+            {...getOverrideProps(overrides, "Home")}
           ></Text>
           <Text
             fontFamily="Inter"
@@ -124,8 +131,11 @@ export default function MarketingFooterBrand(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children="CLI"
-            {...getOverrideProps(overrides, "CLI")}
+            children="Compress"
+            onClick={() => {
+              compressOnClick();
+            }}
+            {...getOverrideProps(overrides, "Compress")}
           ></Text>
           <Text
             fontFamily="Inter"
@@ -146,8 +156,8 @@ export default function MarketingFooterBrand(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children="Studio"
-            {...getOverrideProps(overrides, "Studio")}
+            children="Pricing"
+            {...getOverrideProps(overrides, "Pricing")}
           ></Text>
           <Text
             fontFamily="Inter"
@@ -168,131 +178,8 @@ export default function MarketingFooterBrand(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children="Hosting"
-            {...getOverrideProps(overrides, "Hosting")}
-          ></Text>
-        </Flex>
-        <Flex
-          gap="8px"
-          direction="column"
-          width="unset"
-          height="unset"
-          justifyContent="flex-start"
-          alignItems="flex-start"
-          shrink="0"
-          position="relative"
-          padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Frame 404")}
-        >
-          <Text
-            fontFamily="Inter"
-            fontSize="16px"
-            fontWeight="600"
-            color="rgba(48,64,80,1)"
-            lineHeight="24px"
-            textAlign="left"
-            display="block"
-            direction="column"
-            justifyContent="unset"
-            letterSpacing="0.01px"
-            width="272px"
-            height="unset"
-            gap="unset"
-            alignItems="unset"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="Resources"
-            {...getOverrideProps(overrides, "Resources")}
-          ></Text>
-          <Text
-            fontFamily="Inter"
-            fontSize="16px"
-            fontWeight="400"
-            color="rgba(4,125,149,1)"
-            lineHeight="24px"
-            textAlign="left"
-            display="block"
-            direction="column"
-            justifyContent="unset"
-            letterSpacing="0.01px"
-            width="272px"
-            height="unset"
-            gap="unset"
-            alignItems="unset"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="Docs"
-            {...getOverrideProps(overrides, "Docs")}
-          ></Text>
-          <Text
-            fontFamily="Inter"
-            fontSize="16px"
-            fontWeight="400"
-            color="rgba(4,125,149,1)"
-            lineHeight="24px"
-            textAlign="left"
-            display="block"
-            direction="column"
-            justifyContent="unset"
-            letterSpacing="0.01px"
-            width="272px"
-            height="unset"
-            gap="unset"
-            alignItems="unset"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="Learn"
-            {...getOverrideProps(overrides, "Learn")}
-          ></Text>
-          <Text
-            fontFamily="Inter"
-            fontSize="16px"
-            fontWeight="400"
-            color="rgba(4,125,149,1)"
-            lineHeight="24px"
-            textAlign="left"
-            display="block"
-            direction="column"
-            justifyContent="unset"
-            letterSpacing="0.01px"
-            width="272px"
-            height="unset"
-            gap="unset"
-            alignItems="unset"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="Examples"
-            {...getOverrideProps(overrides, "Examples")}
-          ></Text>
-          <Text
-            fontFamily="Inter"
-            fontSize="16px"
-            fontWeight="400"
-            color="rgba(4,125,149,1)"
-            lineHeight="24px"
-            textAlign="left"
-            display="block"
-            direction="column"
-            justifyContent="unset"
-            letterSpacing="0.01px"
-            width="272px"
-            height="unset"
-            gap="unset"
-            alignItems="unset"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="Changelog"
-            {...getOverrideProps(overrides, "Changelog")}
+            children="Data management policy"
+            {...getOverrideProps(overrides, "Data")}
           ></Text>
         </Flex>
         <Flex
@@ -327,7 +214,7 @@ export default function MarketingFooterBrand(props) {
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
             children="Company"
-            {...getOverrideProps(overrides, "Company")}
+            {...getOverrideProps(overrides, "About us39414070")}
           ></Text>
           <Text
             fontFamily="Inter"
@@ -349,7 +236,7 @@ export default function MarketingFooterBrand(props) {
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
             children="About us"
-            {...getOverrideProps(overrides, "About us")}
+            {...getOverrideProps(overrides, "About us39414071")}
           ></Text>
           <Text
             fontFamily="Inter"
@@ -392,8 +279,8 @@ export default function MarketingFooterBrand(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children="Blog"
-            {...getOverrideProps(overrides, "Blog")}
+            children="General terms and conditions"
+            {...getOverrideProps(overrides, "General terms and conditions")}
           ></Text>
         </Flex>
       </Flex>
@@ -410,19 +297,22 @@ export default function MarketingFooterBrand(props) {
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "Frame 433")}
       >
-        <LogoWithText
-          width="127.88px"
-          height="18.91px"
-          display="block"
-          gap="unset"
-          alignItems="unset"
-          justifyContent="unset"
+        <Logo
+          display="flex"
+          gap="10px"
+          direction="column"
+          width="unset"
+          height="unset"
+          justifyContent="flex-start"
+          alignItems="flex-start"
           shrink="0"
           position="relative"
+          border="1px SOLID rgba(0,0,0,1)"
           padding="0px 0px 0px 0px"
+          backgroundColor="rgba(255,255,255,1)"
           color="brand"
-          {...getOverrideProps(overrides, "LogoWithText")}
-        ></LogoWithText>
+          {...getOverrideProps(overrides, "Logo")}
+        ></Logo>
         <Text
           fontFamily="Inter"
           fontSize="16px"
@@ -441,10 +331,10 @@ export default function MarketingFooterBrand(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="© 2023 AWS Amplify UI. All rights reserved."
+          children="© 2024 Compresstout All rights reserved."
           {...getOverrideProps(
             overrides,
-            "\u00A9 2023 AWS Amplify UI. All rights reserved."
+            "\u00A9 2024 Compresstout All rights reserved."
           )}
         ></Text>
       </Flex>

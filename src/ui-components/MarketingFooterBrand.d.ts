@@ -6,7 +6,7 @@
 
 import * as React from "react";
 import { FlexProps, TextProps } from "@aws-amplify/ui-react";
-import { LogoWithTextProps } from "./LogoWithText";
+import { LogoProps } from "./Logo";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
 } | null;
@@ -22,25 +22,19 @@ export declare type MarketingFooterBrandOverridesProps = {
     MarketingFooterBrand?: PrimitiveOverrideProps<FlexProps>;
     "Frame 40539414056"?: PrimitiveOverrideProps<FlexProps>;
     "Frame 403"?: PrimitiveOverrideProps<FlexProps>;
-    Products?: PrimitiveOverrideProps<TextProps>;
-    Libraries?: PrimitiveOverrideProps<TextProps>;
-    CLI?: PrimitiveOverrideProps<TextProps>;
-    Studio?: PrimitiveOverrideProps<TextProps>;
-    Hosting?: PrimitiveOverrideProps<TextProps>;
-    "Frame 404"?: PrimitiveOverrideProps<FlexProps>;
-    Resources?: PrimitiveOverrideProps<TextProps>;
-    Docs?: PrimitiveOverrideProps<TextProps>;
-    Learn?: PrimitiveOverrideProps<TextProps>;
-    Examples?: PrimitiveOverrideProps<TextProps>;
-    Changelog?: PrimitiveOverrideProps<TextProps>;
+    Compresstout?: PrimitiveOverrideProps<TextProps>;
+    Home?: PrimitiveOverrideProps<TextProps>;
+    Compress?: PrimitiveOverrideProps<TextProps>;
+    Pricing?: PrimitiveOverrideProps<TextProps>;
+    Data?: PrimitiveOverrideProps<TextProps>;
     "Frame 40539414069"?: PrimitiveOverrideProps<FlexProps>;
-    Company?: PrimitiveOverrideProps<TextProps>;
-    "About us"?: PrimitiveOverrideProps<TextProps>;
+    "About us39414070"?: PrimitiveOverrideProps<TextProps>;
+    "About us39414071"?: PrimitiveOverrideProps<TextProps>;
     Contact?: PrimitiveOverrideProps<TextProps>;
-    Blog?: PrimitiveOverrideProps<TextProps>;
+    "General terms and conditions"?: PrimitiveOverrideProps<TextProps>;
     "Frame 433"?: PrimitiveOverrideProps<FlexProps>;
-    LogoWithText?: LogoWithTextProps;
-    "\u00A9 2023 AWS Amplify UI. All rights reserved."?: PrimitiveOverrideProps<TextProps>;
+    Logo?: LogoProps;
+    "\u00A9 2024 Compresstout All rights reserved."?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;
 export declare type MarketingFooterBrandProps = React.PropsWithChildren<Partial<FlexProps> & {
     overrides?: MarketingFooterBrandOverridesProps | undefined | null;
