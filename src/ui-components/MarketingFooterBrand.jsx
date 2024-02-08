@@ -15,14 +15,8 @@ export default function MarketingFooterBrand(props) {
     type: "url",
     url: "",
   });
-  const compresstoutOnClick = useNavigateAction({
-    type: "url",
-    url: "https://google.com",
-  });
-  const compressOnClick = useNavigateAction({
-    type: "url",
-    url: "/compressor",
-  });
+  const homeOnClick = useNavigateAction({ type: "url", url: "/" });
+  const compressOnClick = useNavigateAction({ type: "url", url: "/compress" });
   return (
     <Flex
       gap="32px"
@@ -85,9 +79,6 @@ export default function MarketingFooterBrand(props) {
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
             children="Compresstout"
-            onClick={() => {
-              compresstoutOnClick();
-            }}
             {...getOverrideProps(overrides, "Compresstout")}
           ></Text>
           <Text
@@ -110,6 +101,9 @@ export default function MarketingFooterBrand(props) {
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
             children="Home"
+            onClick={() => {
+              homeOnClick();
+            }}
             {...getOverrideProps(overrides, "Home")}
           ></Text>
           <Text
