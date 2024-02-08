@@ -14,7 +14,7 @@ Amplify.configure(amplifyconfig);
 const root = createRoot(document.getElementById('root')); // Utilisez createRoot pour React 18+
 root.render(
   <ThemeProvider theme={studioTheme}>
-    <App />
+      <App />
   </ThemeProvider>
 );
 

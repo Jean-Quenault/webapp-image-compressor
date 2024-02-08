@@ -4,7 +4,7 @@ import { MarketingFooterBrand } from './ui-components';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <CompressFile />
       <MarketingFooterBrand />
     </div>
