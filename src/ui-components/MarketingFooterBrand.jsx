@@ -17,6 +17,8 @@ export default function MarketingFooterBrand(props) {
   });
   const homeOnClick = useNavigateAction({ type: "url", url: "/" });
   const compressOnClick = useNavigateAction({ type: "url", url: "/compress" });
+  const pricingOnClick = useNavigateAction({ type: "url", url: "/pricing" });
+  const contactOnClick = useNavigateAction({ type: "url", url: "/contact" });
   return (
     <Flex
       gap="32px"
@@ -151,6 +153,9 @@ export default function MarketingFooterBrand(props) {
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
             children="Pricing"
+            onClick={() => {
+              pricingOnClick();
+            }}
             {...getOverrideProps(overrides, "Pricing")}
           ></Text>
           <Text
@@ -252,6 +257,9 @@ export default function MarketingFooterBrand(props) {
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
             children="Contact"
+            onClick={() => {
+              contactOnClick();
+            }}
             {...getOverrideProps(overrides, "Contact")}
           ></Text>
           <Text

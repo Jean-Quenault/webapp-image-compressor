@@ -1,6 +1,6 @@
 import {
     MarketingPricing 
-   } from './ui-components';
+   } from '../ui-components';
 import CompressFile from '../components/Compressor';
 
 
