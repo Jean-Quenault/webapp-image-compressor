@@ -8,8 +8,6 @@ import { Amplify } from 'aws-amplify';
 import "@aws-amplify/ui-react/styles.css";
 import studioTheme from './ui-components/studioTheme';
 import amplifyconfig from './amplifyconfiguration.json';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-
 
 Amplify.configure(amplifyconfig);
 
