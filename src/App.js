@@ -7,7 +7,7 @@ import CompressFile from './components/Compressor';
 
 function App() {
   return (
-    <div> {/* Added a parent div */}
+    <div>
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />

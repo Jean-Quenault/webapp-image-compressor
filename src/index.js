@@ -8,16 +8,13 @@ import { Amplify } from 'aws-amplify';
 import "@aws-amplify/ui-react/styles.css";
 import studioTheme from './ui-components/studioTheme';
 import amplifyconfig from './amplifyconfiguration.json';
-import { BrowserRouter as Router } from 'react-router-dom';
 
 Amplify.configure(amplifyconfig);
 
 const root = createRoot(document.getElementById('root')); // Utilisez createRoot pour React 18+
 root.render(
   <ThemeProvider theme={studioTheme}>
-    <Router>
       <App />
-    </Router>
   </ThemeProvider>
 );
 
