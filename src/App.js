@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home';
-import About from './pages/About';
-import Contact from './pages/Contact';
+import Home from './components/Home';
+import About from './components/About';
+import Contact from './components/Contact';
 import CompressFile from './components/Compressor';
 
 function App() {

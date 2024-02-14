@@ -2,7 +2,7 @@ import React from 'react';
 import {
     MarketingPricing 
    } from '../ui-components';
-import CompressFile from '../components/Compressor';
+import CompressFile from './Compressor';
 
 
 const PricingPage = () => ( 
