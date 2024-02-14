@@ -1,15 +1,15 @@
 import React from 'react';
 import {
-    MarketingPricing 
+    MarketingFooterBrand 
    } from '../ui-components';
 import CompressFile from './Compressor';
 
 
-const PricingPage = () => ( 
+const Compress = () => ( 
     <div>
         <CompressFile/>
-        <MarketingPricing />
+        <MarketingFooterBrand />
     </div>
 );
 
-export default PricingPage;
+export default Compress;
