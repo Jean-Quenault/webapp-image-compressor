@@ -10,6 +10,7 @@ import {
   getOverrideProps,
   getOverridesFromVariants,
   mergeVariantsAndOverrides,
+  useNavigateAction,
 } from "./utils";
 import { Button, Flex, Text } from "@aws-amplify/ui-react";
 export default function HeroLayout2(props) {
@@ -48,6 +49,11 @@ export default function HeroLayout2(props) {
     getOverridesFromVariants(variants, props),
     overridesProp || {}
   );
+  const buttonOnClick = useNavigateAction({
+    target: "_blank",
+    type: "url",
+    url: "https://github.com/Jean-Quenault/webapp-image-compressor",
+  });
   return (
     <Flex
       gap="10px"
@@ -99,7 +105,7 @@ export default function HeroLayout2(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="Full stack"
+          children="A fully webapp on AWS"
           {...getOverrideProps(overrides, "Full stack")}
         ></Text>
         <Flex
@@ -135,7 +141,7 @@ export default function HeroLayout2(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children="Build full-stack web and mobile apps in hours. Easy to start, easy to scale"
+            children="Built with Amplify, API Gateway, Lambda, S3, and Route53."
             {...getOverrideProps(
               overrides,
               "Build full-stack web and mobile apps in hours. Easy to start, easy to scale"
@@ -161,7 +167,7 @@ export default function HeroLayout2(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children="AWS Amplify is a complete solution that lets frontend web and mobile developers easily build, ship, and host full-stack applications on AWS, with the flexibility to leverage the breadth of AWS services as use cases evolve. No cloud expertise needed."
+            children="Developped in React, UI created with Figma."
             {...getOverrideProps(
               overrides,
               "AWS Amplify is a complete solution that lets frontend web and mobile developers easily build, ship, and host full-stack applications on AWS, with the flexibility to leverage the breadth of AWS services as use cases evolve. No cloud expertise needed."
@@ -175,7 +181,10 @@ export default function HeroLayout2(props) {
           size="large"
           isDisabled={false}
           variation="primary"
-          children="Get started"
+          children="Go to the GitHub repository"
+          onClick={() => {
+            buttonOnClick();
+          }}
           {...getOverrideProps(overrides, "Button")}
         ></Button>
       </Flex>
