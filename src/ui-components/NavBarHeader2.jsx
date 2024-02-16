@@ -6,10 +6,14 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { getOverrideProps } from "./utils";
+import { getOverrideProps, useNavigateAction } from "./utils";
 import { Button, Flex, Image, Text, View } from "@aws-amplify/ui-react";
 export default function NavBarHeader2(props) {
   const { overrides, ...rest } = props;
+  const homeOnClick = useNavigateAction({ type: "url", url: "/home" });
+  const compressOnClick = useNavigateAction({ type: "url", url: "/compress" });
+  const pricingOnClick = useNavigateAction({ type: "url", url: "/pricing" });
+  const contactOnClick = useNavigateAction({ type: "url", url: "/contact" });
   return (
     <Flex
       gap="10px"
@@ -85,6 +89,9 @@ export default function NavBarHeader2(props) {
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="Home"
+          onClick={() => {
+            homeOnClick();
+          }}
           {...getOverrideProps(overrides, "Home")}
         ></Text>
         <Text
@@ -106,6 +113,9 @@ export default function NavBarHeader2(props) {
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="Compress"
+          onClick={() => {
+            compressOnClick();
+          }}
           {...getOverrideProps(overrides, "Compress")}
         ></Text>
         <Text
@@ -127,6 +137,9 @@ export default function NavBarHeader2(props) {
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="Pricing"
+          onClick={() => {
+            pricingOnClick();
+          }}
           {...getOverrideProps(overrides, "Pricing")}
         ></Text>
         <Text
@@ -148,6 +161,9 @@ export default function NavBarHeader2(props) {
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="Contact"
+          onClick={() => {
+            contactOnClick();
+          }}
           {...getOverrideProps(overrides, "Contact")}
         ></Text>
       </Flex>
