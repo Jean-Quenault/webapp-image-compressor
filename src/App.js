@@ -6,6 +6,7 @@ import Contact from './components/Contact';
 import Compress from './components/Compress';
 import DataPolicy from './components/DataPolicy';
 import GeneralTermsConditions from './components/GeneralTermsConditions';
+import Pricing from './components/Pricing';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/compress" element={<Compress />} />
+          <Route path="/pricing" element={<Pricing />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/data-management-policy" element={<DataPolicy />} />
