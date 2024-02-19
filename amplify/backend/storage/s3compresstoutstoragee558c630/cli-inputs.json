@@ -1,0 +1,10 @@
+{
+  "resourceName": "s3compresstoutstoragee558c630",
+  "bucketName": "compresstout-storage-e558c630",
+  "policyUUID": "90880419",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE"
+  ]
+}
